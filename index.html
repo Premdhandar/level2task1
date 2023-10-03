@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #144488;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        /* Adjust logo styles */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px; /* Adjust the width of the logo image as needed */
+            height: auto; /* Automatically adjust the height based on the width */
+            margin-right: 10px; /* Add some spacing between the logo image and text */
+        }
+
+        .logo-text {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none; /* Hide the regular menu */
+            }
+
+            .menu-icon {
+                display: block; /* Display the hamburger menu icon */
+                cursor: pointer;
+            }
+
+            .bar {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 4px 0;
+            }
+
+            /* Show the menu when hamburger icon is clicked */
+            .menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                border-radius: 0 0 10px 10px;
+            }
+
+            .menu.active li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+        
+        /* Main section styles */
+        main {
+            padding: 20px;
+            background-color: #3db2a4;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Beautiful-Full-HD-Images (1).jpg.crdownload" alt="Your Logo">
+            <div class="logo-text">Your Website</div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to the World of Nature</h1>
+        <p>Nature is a marvel that encompasses everything around us. From the lush green forests to the serene blue oceans, nature's beauty is unparalleled. It provides us with clean air to breathe, fresh water to drink, and a habitat for countless species of plants and animals.</p>
+        <p>Exploring nature can be a source of wonder and inspiration. Whether you enjoy hiking through the mountains, watching a sunset over the horizon, or simply taking a leisurely walk in the park, there's something in nature for everyone to enjoy.</p>
+        <p>Let's cherish and protect our natural world so that future generations can continue to experience its magnificence. Together, we can make a difference in preserving the beauty and diversity of our planet.</p>
+    </main>
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menu = document.querySelector('.menu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
